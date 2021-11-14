@@ -1,0 +1,27 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 600" width="350" height="600">
+  <defs>
+    <style type="text/css">
+      @font-face {
+        font-family: "Roboto Mono";
+        src: url("data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAAP8ABIAAAAACGAAAAOcAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHDQ/SFZBUioGYD9TVEFUgQAnHgA8L1YRCApAWgsIADByATYCJAMIBCAFh1AHIAwHGzoHyAQieO9zNnjSgW1TyLmCTgn+AkDOhtMy45HEjyk8wSo45v9zjP2MMdUcH1xdha3vdqSK1Fa1ytbW+NqQNo8ZWThZfOUUAnjI1/+GVq5CtXqkbjuod1cSO/S2upDYtXXf7iTSpdoiatsXJpM70Sh4ZBEq+FAZ+pp2Tmail/TFev6uP82hq16ivfKj3z2QjCSZiVQdUUP9uGLNmhUx8dv/XG3+XQNXGyW7gayoKaAV0zdymKwiLv7Do3F0xzOgDOjQsa/ZL3Xq27qreBF8xJOBAphU87ouPtqFQC1+yQHeNhUJyEwklb2vC0H5emGhV0QdFBQJhw3lNKcf5CCv1zy8Ho+pnzGNiUmoyLJoLTioNLJIHZOCgkH1+HSiZj+yt4m5RHkIhdrR6HhCBB57vXP0qIzgkSuiKpIDWU30z2pxiJN8RdYlbn5EPL2KbRMUd6UQOuzAIybbDWpp+q8kOMQzyKu3aO4d0kzzDvE0i5u38Rn6xq3lA1W+/+4cuhIKtCy/FX3jc/uGzxAqEHKJo4FbWQ9iMlLBR3ogrfq9/pmZMq1cuT35aa3mzR886DV2DCNMzklKislhRowx7fJj/G3fvClatMTH8JHjx6Ojl40dY9qd1XVVq24x7c5jTLaNAQFU6FF6xd6WwRLfXF4XAEc/hnMB3L5Zes1f/d81R0VXG8CNAj66ctWadu6v/n+8o2Kse5YZ0c6d2NyX71PZRCwT0DmuNE0nSilFtZyc2yr3ZxohVk5qFAKyW6NSTEZqNDJJE41Ooph25DJIMmoB6iFBpWzhXoJ8j1uhUUjNfI2Kh6kaDYOugm5fFGkLceKjlcZFOkpJ3cpCUo8ynnih9Fn7RL9NMWBHDCoxJEfC6nOoQQ96043WdKUyfQ/XO9GWOvSgDT3o25FWl3bnOSnTL3SlHQ5g8OpY/Yed6Ee3ywHM16vRiQ50pO/0ABavR8dBsPuh0BCLDZvRvvSkGLn78gGtXLSmJybb0hGLXKHMdSB36EYtutMHi67nphqVKUt5alB38Dg5yUcu8nhwqw4WHehHV1rTmwb9Tm/60OlTxiC/1qU8mkFjYMvY4P714lSkJjWpSHGrO2/2WiJlMejJIHrHETfIR528FMSIQ2Z5c4CXH9WiNz3ojEVbrUwK/WIZ4nDQB4MsMY59BpkOdPrY6kcbciHTg24vWj3oQQdkLNoLs75TsbdN7NbHrHXWPezObcTWcnyn2OM2atMA")  format("woff2");
+      }
+      text {
+        font-family: "Roboto Mono";
+        font-size: 500px;
+        white-space: pre;
+      }
+    </style>
+  </defs>
+  <filter id="dropshadow" height="130%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
+    <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.5"/> <!-- slope is the opacity of the shadow -->
+    </feComponentTransfer>
+    <feMerge> 
+      <feMergeNode/> <!-- this contains the offset blurred image -->
+      <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+    </feMerge>
+  </filter>
+  <text x="175" y="475" fill="#721c24" text-anchor="middle" direction="ltr" style="filter:url(#dropshadow)">M</text>
+</svg>
